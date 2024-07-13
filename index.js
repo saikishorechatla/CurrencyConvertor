@@ -19,11 +19,6 @@ const conversion = () => {
     let fromRate = res[fromCurrency];
     let toRate = res[toCurrency];
   
-    if (!fromRate || !toRate) {
-      document.getElementById('res').innerText = 'Invalid currencies selected.';
-      return;
-    }
-  
     let convertedAmount = (amount / fromRate) * toRate;
   
     document.getElementById('res').innerText = `${amount} ${fromCurrency} = ${convertedAmount.toFixed(2)} ${toCurrency}`;
