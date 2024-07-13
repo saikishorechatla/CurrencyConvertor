@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="page">
+      <main id="total">
+        <h2 id="heading">Currency Convertor</h2>
+        <section class="container">
+          <div class="display">
+            <div class="inpu">
+              <label><h3>Enter Value</h3></label>
+              <input value="1" id="'in" type="text" placeholder="Please Enter Value" />
+            </div>
+            <div class="inpu">
+              <label><h3>Conversion Value :</h3></label>
+              <div id="res"></div>
+            </div>
+          </div>
+          <div id="grp">
+            <div class="from">
+              <label id="h"> FROM : USA</label>
+              <img id ="f" src="https://flagsapi.com/US/shiny/64.png" alt="" />
+              <select class="dropdown" name="fCurrency" id="fCountry"></select>
+            </div>
+            <div class="from">
+              <label id="g">TO :IND</label>
+              <img  id ="t" src="https://flagsapi.com/IN/shiny/64.png" alt="" />
+              <select class="dropdown" name="toCurrency" id="toCountry"></select>
+            </div>
+          </div>
+          <button id="convert" onclick="conversion()">Convert</button>
+        </section>
+      </main>
+    </div>
+    <script src="flag.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
