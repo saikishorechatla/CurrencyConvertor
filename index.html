@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Currency Convertor</title>
     <link rel="stylesheet" href="index.css" />
+    <link rel="icon" type="image/x-icon" href="static/favicon.png">
   </head>
   <body>
     <div class="page">
@@ -14,7 +15,7 @@
           <div class="display">
             <div class="inpu">
               <label><h3>Enter Value</h3></label>
-              <input value="1" id="'in" type="text" placeholder="Please Enter Value" />
+              <input value="1" id="'in" type="text"  />
             </div>
             <div class="inpu">
               <label><h3>Conversion Value :</h3></label>
@@ -26,6 +27,9 @@
               <label id="h"> FROM : USA</label>
               <img id ="f" src="https://flagsapi.com/US/shiny/64.png" alt="" />
               <select class="dropdown" name="fCurrency" id="fCountry"></select>
+            </div>
+            <div>
+              <img onclick="clickHandle()" src="https://freepngimg.com/download/money/48819-5-exchange-png-file-hd.png" alt="ex" width="40px">
             </div>
             <div class="from">
               <label id="g">TO :IND</label>

@@ -60,5 +60,22 @@ for ( const select of dropdown) {
   select.addEventListener('change',handle);
 }
 
+const clickHandle = () => {
+    let fromSelect = document.getElementById('fCountry');
+    let toSelect = document.getElementById('toCountry');
+    
+
+    let fromValue = fromSelect.value;
+    fromSelect.value = toSelect.value;
+    toSelect.value = fromValue;
+   
+    document.getElementById('h').innerText = `FROM: ${countryList[fromSelect.value]}`;
+    document.getElementById('f').src = `https://flagsapi.com/${countryList[fromSelect.value]}/shiny/64.png`;
+    document.getElementById('g').innerText = `TO: ${countryList[toSelect.value]}`;
+    document.getElementById('t').src = `https://flagsapi.com/${countryList[toSelect.value]}/shiny/64.png`;
+
+    conversion(); 
+  }
+  
 
 
